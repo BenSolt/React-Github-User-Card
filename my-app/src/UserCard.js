@@ -11,22 +11,34 @@ const UserCard = (props) => {
   // console.log(props)
   return(
 
-  <Card>
-    <Image src={props.image} wrapped ui={false} />
-    <Card.Content>
-      <Card.Header>{props.name}</Card.Header>
-      <Card.Meta>
-        <span className='date'>Joined in 2015</span>
-      </Card.Meta>
-      <Card.Description>
-        Matthew is a musician living in Nashville.{props.bio}
-      </Card.Description>
-    </Card.Content>
+  // <div>
     
-  </Card>
+  //   <Image src={props.user.avatar_url} wrapped ui={false} />
+
+  //   <div>
+  //     <Card.Header>{props.user.name}</Card.Header>
+  //     <Card.Meta>
+    
+  //     </Card.Meta>
+  //     <h2>{props.user.bio}</h2>
+  //   </div>
+    
+  // </div>
+
+
+<div>
+  
+{props.followers.map(followers =>
+  <div>{followers.login}</div>
+  
+  )}
+  
+
+</div>
+  
+
 
 )}
-
 
 
 
