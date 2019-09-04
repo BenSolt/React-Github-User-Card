@@ -2,7 +2,22 @@
   text-align: center;
 }
 
+.cardholder{
+  width: 320px;
+  height: auto;
+  background: grey;
+  padding: 5px;
+}
+
+.card{
+  width: 300px;
+  height: auto;
+  background: lightgray;
+  margin: 10px;
+}
+
+
 .img{
-width: 50px;
-height: 40px;
+  width: 256px;
+  height: auto;
 }

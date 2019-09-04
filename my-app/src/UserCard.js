@@ -7,16 +7,25 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 const UserCard = (props) => {
 
   return(
-<div>
-      <h2>{props.user.login}</h2>
-      <img src={props.user.avatar_url} wrapped ui={false}/>
+<div className="cardholder">
+
+  <div className="card">
+
+    <h2>{props.user.login}</h2>
+    <img className="img" src={props.user.avatar_url} wrapped ui={false}/>
+    <h5>{props.user.bio}</h5>
+
+  </div>
       
-      <h2> {props.user.name}</h2>
+      
       
 
-      <div>
-        {props.followers.map(followers => <div key={followers.id}>{followers.login}</div> )}
-        <img src={followers.avatar_url} wrapped ui={false}/>
+      <div className="card">
+        {props.followers.map(followers => <div key={followers.id}> <h2>{followers.login}</h2>
+        <img className="img" src={followers.avatar_url}></img>
+        <h5>{followers.bio}</h5>
+        </div> )}
+        
 
       </div>
 
