@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.cardholder{
+  display: flex;
+  width: auto;
+  height: auto;
+ 
+  padding: 5px;
+}
+
+.card{
+  width: 300px;
+  height: 450px;
+  background: lightgray;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.img{
+  width: 256px;
+  height: auto;
+  border-radius: 5px;
+}
+
+ .followers{
+ background:rgb(165, 165, 165);
+ border-radius: 5px;
+} 
+
+h1{
+  justify-content: center;
+  text-decoration: underline;
+  
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.cardholder2{
+  display: flex;
+  width: auto;
+  height: auto;
+  
+  padding: 5px;
+}
+
+.card2{
+  
+  width: 256px;
+  height: 356px;
+  background: lightgray;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.img2{
+  
+  width: 222px;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px;
+}
