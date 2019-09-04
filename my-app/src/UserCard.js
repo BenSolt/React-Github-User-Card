@@ -1,48 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import axios from 'axios';
-import ReactDOM from "react-dom";
+
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 const UserCard = (props) => {
+
+  return(
+<div>
+      <h2>{props.user.login}</h2>
+      <img src={props.user.avatar_url} wrapped ui={false}/>
+      
+      <h2> {props.user.name}</h2>
+      
+
+      <div>
+        {props.followers.map(followers => <div key={followers.id}>{followers.login}</div> )}
+        <img src={followers.avatar_url} wrapped ui={false}/>
+
+      </div>
+
+      </div>
+  );
+}
+
+
+
   
   
   // console.log(props)
-  return(
+ 
 
-  // <div>
+  // <Card>
     
   //   <Image src={props.user.avatar_url} wrapped ui={false} />
 
-  //   <div>
+  //   <Card.Content>
   //     <Card.Header>{props.user.name}</Card.Header>
   //     <Card.Meta>
     
   //     </Card.Meta>
-  //     <h2>{props.user.bio}</h2>
-  //   </div>
+  //     <Card.Description>{props.user.bio}</Card.Description>
+  //   </Card.Content>
     
-  // </div>
+  // </Card>
 
-
-<div>
-  
-{props.followers.map(followers =>
-  <div>{followers.login}</div>
-  
-  )}
-  
-
-</div>
-  
-
-
-)}
-
-
-
-
+      
 
 
 export default UserCard;

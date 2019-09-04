@@ -5,6 +5,7 @@ import axios from 'axios';
 import ReactDOM from "react-dom";
 
 import UserCard from "./UserCard"
+// import FollowerCard from "./FollowerCard"
 
 class App extends React.Component {
 
@@ -45,28 +46,6 @@ class App extends React.Component {
     }
       
 
-
-    
-
-
-
-    // componentDidMount() {
-    //   axios.get(`https://api.github.com/users/BenSolt/followers`)
-    //   .then(res => console.log(res))
-    //   .catch(err => console.log("error"));
-
-    // }
-
-
-
-
-// componentDidUpdate(){}
-
-
-
-
-
-
   // fetchUsers = e => {
   //     e.preventDefault();
   //     fetch("https://api.github.com/users/BenSolt/followers")
@@ -88,13 +67,14 @@ class App extends React.Component {
             <h1>Github-User Card</h1>  
             {/* <button onClick={this.fetchUsers}>Get Followers</button>  */}
             <UserCard user={this.state.user}
-            followers={this.state.followers}
-            //  key = {this.state.user.id}
+            followers={this.state.followers}/>
+
+            {/* //  key = {this.state.user.id}
             // image={this.state.user.avatar_url}
             // bio={this.state.user.bio}
             // name={this.state.user.name}
-            // email={this.state.user.email} 
-            />
+            // email={this.state.user.email}  */}
+          
           
 
 
