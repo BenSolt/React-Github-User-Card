@@ -4,7 +4,7 @@ import './App.css';
 import axios from 'axios';
 import ReactDOM from "react-dom";
 
-import UserCard from "./UserCard"
+import UserCard from "../components/UserCard"
 // import FollowerCard from "./FollowerCard"
 
 class App extends React.Component {
@@ -17,20 +17,6 @@ class App extends React.Component {
     };
   }
 
-  
-
-   
-
-
-
-    //  followersArray = [
-
-    //   'paulsolt',
-    //   'rojcewiczj',
-    //   'rogermcconkiejr',
-    //    'tetondan',
-    //   'dustinmyers',
-    // ];
 
     componentDidMount() {
       console.log("first rendre(mounting)");
